@@ -32,8 +32,7 @@ class LogisticRegression(object):
 
         for i in range(self.n_iter):
             self.cost_.append(self.update_weights(x,y))
-            # note that we compute the logistic `cost` now
-            # instead of the sum of squared errors cost
+
         return self
     def update_weights(self,x,y):
         net_input = self.net_input(x)
